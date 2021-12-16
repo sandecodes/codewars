@@ -1,4 +1,4 @@
-const booleanToString = (b) => Boolean(b).toString();
+const booleanToString = (b) => b.toString();
 
 console.log(booleanToString(true));
 console.log(booleanToString(false));
