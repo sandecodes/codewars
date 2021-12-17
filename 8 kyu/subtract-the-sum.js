@@ -1,0 +1,1 @@
+SubtractSum = (n) => 'apple';
