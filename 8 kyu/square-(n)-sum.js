@@ -6,4 +6,4 @@ For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9.
 
 */
 
-squareSum = (numbers) => numbers.map((number) => number * number).reduce((a, b) => a + b, 0);
+squareSum = (numbers) => numbers.reduce((acc, n) => acc + n * n, 0);
