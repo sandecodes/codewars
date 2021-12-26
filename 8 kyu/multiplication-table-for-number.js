@@ -21,5 +21,13 @@ Note: newlines should be added between rows, but there should be no trailing new
 */
 
 function multiTable(number) {
-  return [...Array(10)].map((_, i) => `${i + 1} * ${number} = ${number * i + number}`).join('\n');
+  let table = [];
+
+  for (let i = 1; i <= 10; i++) {
+    table.push(i + ' * ' + number + ' = ' + i * number);
+  }
+  return table.join('\n');
 }
+
+console.log(multiTable(5));
+console.log(multiTable(1));
