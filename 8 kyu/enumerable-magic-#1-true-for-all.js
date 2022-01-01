@@ -18,29 +18,17 @@ http://www.rubycuts.com/enum-all
 
 */
 
-// function all(arr, fun) {
-//   for (let i = 0; i < arr.length; i++) {
-//     if (fun(arr[i])) {
-//       return true;
-//     }
-//   }
-//   return false;
-// }
+/* Optional - 1 */
+function all(arr, fun) {
+  for (let i = 0; i < arr.length; i++) {
+    if (fun(arr[i])) {
+      return true;
+    }
+  }
+  return false;
+}
 
+/* Optional - 2 */
 function all(arr, fun) {
   return arr.every(fun);
 }
-
-console.log(
-  all([1, 2, 3, 4, 5], function (v) {
-    return v < 9;
-  }),
-  true
-);
-
-console.log(
-  all([1, 2, 3, 4, 5], function (v) {
-    return v > 9;
-  }),
-  false
-);
